@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kimgayoung</title>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="https://kit.fontawesome.com/c9638a4995.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">    
+   
+    <style>
+        body{
+            margin: 0;
+            /* font-family: 'Mukta', sans-serif; */
+            
+            
+            background-image: url("img/4445.gif"),url("img/rr.gif");
+            
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+
+        #introduce, #hobby ,#Roadmap, #Login{
+            display: none;
+            margin-top: 100px;
+            margin-left: 50px;
+            
+        }
+
+        /* #hobby{
+            
+        } */
+
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 12px;
+            background-color: rgba(253, 251, 253, 0.473);
+            border-radius: 4px;
+            flex-direction: column;
+            display: none;
+            font-family: 'Aldrich', sans-serif;
+            /* align-items: flex-start; */
+        }
+
+        .menu{
+            display: flex;
+            list-style: none;
+            padding-left: 0;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            text-align: center;
+        }
+
+        .navbar li {
+            padding: 8px 20px;
+            text-decoration: none;
+            color: cornsilk;
+            cursor: pointer;
+            font-size: 25px;
+        }
+
+        .navbar li:hover{
+            background-color: rgba(128, 128, 128, 0.473);
+            border-radius: 20%;
+        }
+        #icon{
+            position: absolute;
+            left: 32px;
+            top: 20px;
+            font-size: 50px;
+            color: whitesmoke;
+            cursor: pointer;
+            transition-duration: .7s;
+        }
+        #icon:hover{
+            transform: rotate(180deg);
+        }
+        .content{
+            font-size: 24px;
+            width: 77%; 
+            height: 350px;
+            /* float: right; */
+            border: 15px  black;
+            background-color: rgba(255, 255, 255, 0.301);
+            margin: 5px;
+            float: left;
+
+        }
+        .contentImg{
+            padding: 0;
+            margin: 5px;
+            width: 17%; 
+            height: 350px;
+            float: left;
+        }
+        #introImg{
+           width: 500px;
+           height: 300px;
+           
+           display: inline-block;
+       }
+       #introDiv{
+           width: 370px;
+           height: 70px;
+           font-size: 30px;
+           border: 3px solid black;
+           background-color: rgba(255, 255, 255, 0.726);
+           display: inline-block;
+       }
+
+       #Roadmap{
+           font-size: 45px;
+           color: white;
+           background-color: rgba(128, 128, 128, 0.473);
+       }
+    </style>
+</head>
+<body>
+    <i class="fas fa-align-justify" id="icon"></i>
+    <nav class="navbar">
+        <div class="menu">
+            <li>introduce</li>
+            <li>hobby</li>
+            <li>Roadmap</li>         
+            <li>Login</li>
+        </div>
+    </nav>
+
+    <section id="introduce">
+        <img id="introImg" src="img/jjj.webp" alt="">
+        <div id="introDiv">안녕 난 김가영이야^^</div>
+        <br style="clear: both;">
+    </section>
+
+    <section id="hobby">
+        
+        <h1>내가 좋아하는 책소개</h1>
+        <hr><br><br>
+        <img class="contentImg" src="img/book1.jpg" alt="">
+
+        <div class='content'>
+            <br><br>  저자 : 김혜남 / 출판사 : 갤리온 / 출판년월 : 2008. 2 <br><br>
+
+            저자 소개: 1959년 서울 출생. 고려대학교 의과대학을 졸업하고 국립서울정신병원에서 12년
+            동안 정신분석 전문의로 일했다. 2006년 한국정신분석학회 학술상을 수상하기도 한 그녀는
+            현재 경희의대, 성균관의대, 인제의대 외래교수이자 서울의대 초빙교수로활동하면서 김혜남 신
+            경정신과의원을 운영하고 있다. 저서로는「나는 정말 너를 사랑하는 걸까?」, 「어른으로 산다는
+            것」, 「왜 나만 우울한 걸까?」등이 있다.
+            </div> 
+        <br style="clear: both;"><br><hr><br><br>
+        <img class="contentImg" src="img/책2.jpg" alt="">
+
+        <div class='content'>
+            <br><br> 작가 : 조남주 / 출판사 민음사 /  출판년월 2016.10  <br><br>
+
+            주인공 '김지영 씨'의 기억을 바탕으로 한 고백을 한 축으로, 고백을 뒷받침하는 각종 통계 
+            자료와 기사들을 또 다른 축으로 삼는 이 소설은 1982년생 김지영 씨로 대변되는 '그녀'들의 
+            인생 마디마디에 존재하는 성차별적 요소를 핍진하게 묘사한다. 
+            이를 통해 작가는 제도적 성차별이 줄어든 시대의 보이지 않는 차별들이 어떻게 여성들의 삶을 
+            제약하고 억압하는지 보여 준다. </div> 
+
+        <br style="clear: both;"><br><hr><br><br>
+        <img class="contentImg" src="img/book04.jpg" alt="">
+
+        <div class='content'>
+            <br><br> 저자명 : La Boite De Pandore/Werber, Bernard <br><br>
+
+            기억의 문이 열리고 모험이 시작된다!
+            한국 독자들이 사랑하는 베스트셀러 작가 베르나르 베르베르의 신작 장편소설 『기억』(전2권)이 
+            프랑스 문학 전문 번역가 전미연의 번역으로 열린책들에서 출간되었다. 
+            꾸준히 신작을 발표해 온 베르베르는 이번에 〈기억〉이라는 테마로 시공간을 넘나들며 자신만의 독특한 
+            세계관을 확장해 나간다.</div> 
+        <br style="clear: both;"><br><hr><br><br>
+        <img class="contentImg" src="img/책3.jpg" alt="">
+
+        <div class='content'> 
+            <br><br> 작가 : 히가시노 게이고 / 출판사 현대문학 / 출판년월 2012.12 <br><br>
+            
+            '나미야 잡화점의 기적'은 일본의 소설이다. 
+            작가는 히가시노 게이고. 옮긴이는 히라노 게이치로의 '일식' 번역으로 일본 고단샤가 수여하는 
+            노마 문예번역상을 수상 한 양윤옥이다.나고야 잡화점의 기적이 아니다
+            작을 하면서 매너리즘에 빠져 있었던 게이고의 작품에서 간만에 나온 수작으로 여러모로 읽을만한, 
+            한국에서도 수년동안 베스트셀러를 차지하며 수십만부 팔려나갈 정도로 인기있는 작품이다. 
+            어째 추리소설보다 플롯이 치밀하다</div> 
+       
+        <br style="clear: both;"><br><br><br><br>
+        
+
+    </section>
+
+    <section id="Roadmap">
+       지금 배우고 있는것들도 힘들어서 다른걸 찾아볼 기력이 없습니다. <br>
+       지금 배우는 Java, oracle, Html, Css, Javascript 부터 열심히 하겠습니다.
+    </section>
+
+    <section id="Login">
+        <head></head>
+        <script>
+        function login(){
+            var id_01 = document.getElementById("id_01");
+            var password_01 = document.getElementById("password_01");
+            var password_02 = document.getElementById("password_02");
+            var name_01 = document.getElementById("name_01");
+
+            var regexp1 = /^[a-zA-Z0-9]{4,12}$/;//아이디,패스워드
+            var regexp2 = /^[가-힝a-zA-Z]{2,}$/;//이름
+
+            if((id_01.value)==""){
+                alert("아이디를 입력하지 않으셨습니다.");
+                id_01.focus();
+                return false;
+            }
+            if(!check(regexp1,id_01)){
+                return false;
+            }
+
+            if((id_02.value)==""){
+                alert("비밀번호를 입력하지 않으셨습니다.");
+                id_02.focus();
+                return false;
+            }
+            if(!check(regexp1,id_02)){
+                return false;
+            }
+            
+            if((password_01.value)!=(password_02.value)){
+                alert("비밀번호와 확인이 일치하지 않습니다");
+                password_01.focus();
+                password_02.focus();
+                return false;
+            }
+            if((name_01.value)==""){
+                alert("이름을 입력하지 않으셨습니다.");
+                name_01.focus();
+                return false;
+            }
+            if(!check(regexp2,name_01,"이름에 특수문자가 들어갔습니다")) {
+                return false;
+            }
+            
+
+        }
+
+        </script>
+       </head>
+       <body>
+           
+        <style>
+        
+        </style>
+        <p>
+            <h1 align="center">회원 가입</h1>
+        </p>
+        
+        <form name="f" method="post" onsubmit="return Login()"
+        action="" enctype="text/plain"> 
+        <table width="30%" height="80" border="1" align="center" cellpadding="5" cellspacing="0" bordercolor="gray">
+            <tr align="center">
+               
+                    
+                   
+            </tr>
+            <tr>
+                <td bgcolor="whitesmoke" align="center">
+                    <div style="font-size: 27px;">아이디</div></td>
+                <td>&nbsp<input type="text" name="id_01" id="id_01" size="12" maxlength="12"></td></tr>
+            
+                <tr><td bgcolor="whitesmoke" align="center"><div style="font-size: 27px;">비밀번호</div></td>
+                <td>&nbsp<input type="password" id="password_01" name="password_01" size="12" maxlength="12"></td></tr>     
+            
+            
+                <tr><td bgcolor="whitesmoke" align="center"><div style="font-size: 27px;">비밀번호 확인</div></td>
+                <td>&nbsp<input type="password" id="password_02" name="password_02" size="12" maxlength="12"></td></tr>
+           
+                
+                <tr><td bgcolor="whitesmoke" align="center"><div style="font-size: 27px;">이름</div></td>
+                <td>&nbsp<input type="text" name="name_01" id="name_01" size="12" maxlength="10"></td></tr>
+                
+           
+            
+        </table>
+            <p align="center">
+            <input type="submit" name="submit" class="btnbtn" value="가입" >
+            <input type="reset" class="btnbtn" value="다시 입력" >
+            </form>
+        </p> 
+   
+       </body>
+    
+
+
+    </section>
+
+
+    <script>
+        //아이콘 누르면 navbar 열고 닫기
+        $("#icon").click(function(){
+            $(".navbar").slideToggle();
+        });
+
+        //메뉴중에 하나를 선택하면 선택한 section slideDown
+        // 나머지 다른 메뉴들은 slideUp
+        $("nav li").click(function(){
+            var sectionId = this.innerText;
+            $('#'+sectionId).siblings().not('i').slideUp();
+            $('#'+sectionId).slideDown();
+        });
+    </script>
+</body>
+</html>
